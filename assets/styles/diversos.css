@@ -1,4 +1,9 @@
 .seccion-diversos{
     width: 100%;
-    height: 000px;
+    height: 600px;
+}
+@media screen and (min-width:768px) {
+    .seccion-diversos{
+        height: 350px;
+    }
 }

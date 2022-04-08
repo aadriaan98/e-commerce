@@ -3,7 +3,7 @@ header{
 }
 .navegacion{
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 65px;
     justify-content: space-between;
 }
@@ -38,42 +38,9 @@ header{
     font-weight: 600;
     background: #ffffff;
 }
+/*barra de busqueda*/
 .bloque-nav img{
     margin-top: 2rem;
-    margin-right: 1.5rem;
 }
-.banner{
-    margin-top: 1rem;
-    background-image: url(../imagenes/banner.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 352px;
-}
-.banner h2{
-    font-weight: 700;
-    font-size: 22px;
-    color: #ffffff;
-    line-height: 26px;
-    padding-top: 13.5rem;
-    padding-left: 1rem;
-}
-.banner p{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
-    padding-left: 1rem;
-    padding-top: .5rem;
-}
-.banner button{
-    width: 118px;
-    height: 40px;
-    margin-left: 1rem;
-    margin-top: .5rem;
-    border: 1px solid #2A7AE4;
-    background-color: #2A7AE4;
-    color: #ffffff;
-}
+
 

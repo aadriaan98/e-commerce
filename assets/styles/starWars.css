@@ -5,9 +5,16 @@
 .bloque-titulo{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 80px;
 }
 .bloque-titulo_h2{
     width: 40%;
+    height: 80px;
+}
+.bloque-titulo_h3{
+    display: flex;
+    width: 25%;
     height: 80px;
 }
 .bloque-titulo_h2 h2{
@@ -16,9 +23,6 @@
     line-height: 26px;
     color: #464646;
     padding: 1rem;
-}
-.bloque-titulo_h3{
-    display: flex;
 }
 .bloque-titulo_h3 h3{
     font-weight: 700;
@@ -51,7 +55,7 @@
     height: 256px;
 }
 /*ultimos 2 bloques*/
-.bloque-productos_items--last{
+.last{
     display: none;
 }
 
@@ -59,7 +63,7 @@
     padding-left: 1rem;
 }
 .bloque-productos_items img{
-    width: 156px;
+    width: 164px;
     height: 174px;
 }
 .bloque-productos_items h3{
@@ -83,4 +87,85 @@
     color: #2A7AE4;
     text-decoration: none;
     padding-top: .5rem;
+}
+@media screen and (min-width:768px) {
+    .seccion-starWars{
+        height: 350px;
+    }
+    .bloque-titulo_h2 h2{
+        padding-left: 2rem;
+    }
+    .bloque-titulo_h3{
+        width: 12%;
+    }
+    .bloque-titulo_h3 img{
+        padding-right: 0;
+    }
+    .bloque-productos{
+        flex-wrap: nowrap;
+    }
+    .bloque-productos_items{
+        width: 20%;
+        padding-left: 2rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .bloque-titulo_h2{
+        padding-left: 1rem;
+    }
+    .bloque-titulo_h3{
+        padding-right: 0rem;
+    }
+    .bloque-productos{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+    } 
+    .bloque-productos_items img{
+        width: 130px;
+    }
+    .bloque-productos_items{
+        width: 140px; 
+        height: 240px;  
+        padding-left: 2rem;
+        padding-right: 0;  
+    }
+    .last{
+        display: initial;
+    }
+    .bloque-productos_items last h3{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #464646;
+        padding-top: .5rem;
+    }
+    .bloque-productos_items last p{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #464646;
+        padding-top: .5rem;
+    }
+    .bloque-productos_items last a{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2A7AE4;
+        text-decoration: none;
+        padding-top: .5rem;
+    }
+
+}
+@media screen and (min-width:1200px) {
+    .bloque-titulo_h3{
+        width: 10%;
+    }
+    .bloque-productos_items img{
+        width: 176px;
+    }
+    .bloque-productos_items{
+        width: 176px;   
+    }
 }
