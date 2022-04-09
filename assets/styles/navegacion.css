@@ -2,9 +2,15 @@ header{
     width: 100%;
 }
 .navegacion{
+    width: 100%;
+    position: fixed;
+    height: 72px;
+    background-color: #ffffff;
+    margin-top: -1rem;
+}
+.navegacion-bloque{
     display: flex;
     width: 90%;
-    height: 65px;
     justify-content: space-between;
 }
 .bloque-logo{
