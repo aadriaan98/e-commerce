@@ -25,6 +25,7 @@ header{
 .bloque-logo h2{
     color: #464646;
     font-weight: 700;
+    font-size: 18px;
 }
 .bloque-logo b{
     color: #2A7AE4;
@@ -42,6 +43,14 @@ header{
     border: 1px solid #2A7AE4;
     font-weight: 600;
     background: #ffffff;
+}
+.bloque-button a{
+    text-decoration: none;
+    color: #2A7AE4;
+}
+.bloque-button a:hover{
+    text-decoration: none;
+    color: #2A7AE4;
 }
 /*barra de busqueda*/
 .navbar{
@@ -70,6 +79,13 @@ header{
 @media screen and (min-width:768px){
     .bloque-logo{
         width: 20%;
+    }
+    .bloque-logo img{
+        width:40.02px;
+        height:29.17px;
+    }
+    .bloque-logo h2{
+        font-size: 25px;
     }
     .navbar{
         width: 70%;
@@ -102,7 +118,7 @@ header{
         height:29.17px;
     }
     .bloque-logo h2{
-        font-size: 22px
+        font-size: 25px
     }
     .navbar .bloque-nav{
         padding-right: 7rem;
@@ -119,5 +135,3 @@ header{
         margin-top: 2.3rem;
     }
 }
-
-
