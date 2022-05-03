@@ -8,28 +8,41 @@
     <link rel="stylesheet" href="/assets/styles/reset.css">
     <link rel="stylesheet" href="/assets/styles/navegacion.css">
     <link rel="stylesheet" href="/assets/styles//formulario/formulario.css">
+    <link rel="stylesheet" href="/assets/styles/errores.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="navegacion-bloque">            
             <div class="bloque-logo">
-                <img src="./assets/imagenes/mando.png" alt="joystick"><h2><b>Alura</b>Geek</h2>  
+                <img src="../assets/imagenes/mando.png" alt="joystick"><h2><b>Alura</b>Geek</h2>  
             </div>
     </header>
 
     <main>
         <section>
-            <form class="formulario"> 
-                <div class="grupo-login">
+            <form class="formulario" id="formulario">
+
+                <div class="grupo-login" id="grupo-email">
+
                     <div class="grupo-input">
-                        <input type="text" placeholder="Usuario">
+                        <input type="text" placeholder="E-mail" class="formulario-input" id="email" name="email">
                     </div>
+
+                    <p class="formulario-input_error">E-mail no válido.</p>
+
+                </div>
         
-                <div class="grupo-login">
+                <div class="grupo-login" id="grupo-password">
+
                     <div class="grupo-input">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" placeholder="Contraseña" class="formulario-input" id="password" name="password">
                     </div>
+
+                    <p class="formulario-input_error">la Contraseña debe tener al menos:<br>
+                    8 caracteres, máximo 15, 1 minuscula <br>1 mayuscula y 1 caracter especial</p>
+
+                </div>    
                 
                 <div class="grupo-button">
                     <button>Iniciar Sesión</button>
@@ -52,6 +65,6 @@
     <footer>
         <h2>Desarrollado por Adrian Barros<br>2022</h2>
     </footer>
-    <script src="./index.js"></script>
+    <script src="../js/formularios/login.js"></script>
 </body>
 </html>

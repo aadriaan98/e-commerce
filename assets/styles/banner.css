@@ -33,6 +33,14 @@
     background-color: #2A7AE4;
     color: #ffffff;
 }
+.banner a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.banner a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
 @media screen and (min-width:480px) {
     .banner{
         width: 100%;

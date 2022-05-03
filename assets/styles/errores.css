@@ -1,0 +1,25 @@
+/* FORMULARIO PAGINA PRINCIPAL */
+.formulario-input_error{
+    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 0.5rem;
+    color: #bb2929;
+    display: none;
+}
+.formulario-input_error-activo{
+    display: block;   
+}
+.grupo-formulario-correcto .formulario-input{
+    border: 3px solid #2A7AE4;
+}
+.grupo-formulario-incorrecto .formulario-input{
+    border: 3px solid #bb2929;
+}
+.grupo-login-correcto .formulario-input{
+    border: 3px solid #2A7AE4;
+}
+.grupo-login-incorrecto .formulario-input{
+    border: 3px solid #bb2929;
+}

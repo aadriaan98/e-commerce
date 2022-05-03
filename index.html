@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/styles/diversos.css">
     <link rel="stylesheet" href="assets/styles/contacto.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="/assets/styles/errores.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -27,7 +28,7 @@
 
                 <div class="navbar">
                         <div class="bloque-button">
-                            <button><a href="formulario.html">Login</a></button>
+                            <button><a href="./html/formulario.html">Login</a></button>
                         </div>
                         
                         <div class="bloque-nav">
@@ -42,7 +43,7 @@
         <section class="banner">
                 <h2>¡Mes de Promos!</h2>
                 <p>Productos selecionados con 33% de descuento</p>
-                <button>Ver Consolas</button>
+                <button><a href="#consolas"> Ver Consolas</a></button>
         </section>
     </header>
     <main>
@@ -54,8 +55,7 @@
                 </div>
 
                 <div class="bloque-titulo_h3">
-                    <h3><a href="#">Ver todo</a></h3>
-                    <img src="./assets/imagenes/flecha.png" alt="flecha">
+                    <button><a href="./html/agregar-productos.html">Agregar Productos</a></button>
                 </div>
                              
             </div>
@@ -107,7 +107,7 @@
 
         </section>
 
-        <section class="seccion-consolas">
+        <section  id="consolas" class="seccion-consolas">
            
             <div class="bloque-titulo">
                 <div class="bloque-titulo_h2">
@@ -115,8 +115,7 @@
                 </div>
 
                 <div class="bloque-titulo_h3">
-                    <h3><a href="#">Ver todo</a></h3>
-                    <img src="./assets/imagenes/flecha.png" alt="flecha">
+                    <button><a href="./html/agregar-productos.html">Agregar Productos</a></button>
                 </div>
                              
             </div>
@@ -175,8 +174,7 @@
                 </div>
 
                 <div class="bloque-titulo_h3">
-                    <h3><a href="#">Ver todo</a></h3>
-                    <img src="./assets/imagenes/flecha.png" alt="flecha">
+                    <button><a href="./html/agregar-productos.html">Agregar Productos</a></button>
                 </div>
                              
             </div>
@@ -250,16 +248,25 @@
             <div class="bloque-formulario">
                 <h2>Hablá con nosotros</h2>
                
-                    <form class="formulario"> 
-                        <div class="grupo-formulario">
+                    <form class="formulario" id="formulario"> 
+
+                        <div class="grupo-formulario" id="grupo-nombre">
+
                             <div class="grupo-input">
-                                <input type="text" placeholder="Nombre">
+                                <input type="text" placeholder="Nombre" class="formulario-input" name="nombre">
                             </div>
 
+                            <p class="formulario-input_error">El nombre sólo puede contener letras y espacios</p>
+
+                        </div>
+
                         <div class="grupo-formulario">
+                            
                             <div class="grupo-input">
-                                <input type="text" placeholder="Dejanos un mensaje">
+                                <input type="text" placeholder="Dejanos un mensaje" class="formulario-input">
                             </div>
+
+                        </div>    
                         
                         <div class="grupo-button">
                             <button>Enviar Mensaje</button>
@@ -267,13 +274,12 @@
 
                     </form>
                 </div>
-            </div>
-
         </section>
     </main>
     <footer>
         <h2>Desarrollado por Adrian Barros<br>2022</h2>
     </footer>
-    <script src="/index.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="./js/formularios/principal.js"></script>
 </body>
 </html>

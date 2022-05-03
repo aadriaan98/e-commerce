@@ -1,0 +1,101 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    width: 100%;
+    background-color: #e5e5e5;
+}
+button{
+    transition: 0.5s all;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.titulo{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: #464646;
+    padding: 2rem;
+    width: 90%;
+}
+.grupo-imagen{
+    margin-top: 2rem;
+    display: flex;
+}
+.grupo-imagen input{
+    font-size: 16px;
+    font-weight: 500;
+    width: 35%;
+    height: 90px;
+    margin: 1rem;
+    border: none;
+}
+.grupo-imagen p{
+    margin-top: 3rem;
+    margin-right: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #464646;
+}
+.grupo-imagen button{
+    margin-top: 2.5rem;
+    background-color: #ffffff;
+    width: 35%;
+    height: 40px; 
+    text-align: center;
+    color: #2A7AE4;
+    border:1px #2A7AE4 solid;
+    font-size: 16px;
+    font-weight: 500;
+}
+.grupo-descripcion input{
+    font-size: 18px;
+    font-weight: 500;
+    width: 90%;
+    height: 40px;
+    margin: 1rem;
+    border: none;
+}
+.grupo-descripcion_last input{
+    font-size: 18px;
+    font-weight: 500;
+    width: 90%;
+    height: 100px;
+    margin: 1rem;
+    border: none;
+}
+.grupo-button button{
+    background-color: #2A7AE4;
+    margin: 1rem;
+    width: 90%;
+    height: 40px; 
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (min-width:768px) {
+    .grupo-imagen input{
+        width: 40%;
+        height: 150px;
+        font-size: 18px;
+    }
+    .grupo-imagen p{
+        font-size: 18px;
+        margin-top: 5rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+    .grupo-imagen button{
+        width: 40%;
+        margin-top: 4rem;
+        height: 60px;
+    }
+    .grupo-button button{
+        height: 60px;
+    }
+}
