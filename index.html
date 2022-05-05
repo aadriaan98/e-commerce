@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/styles/reset.css">
+    <script src="https://kit.fontawesome.com/a03489fd15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/navegacion.css">
     <link rel="stylesheet" href="assets/styles/banner.css">
@@ -32,8 +33,8 @@
                         </div>
                         
                         <div class="bloque-nav">
-                            <input type="text" placeholder="¿Qué buscas?">
-                            <img src="./assets/imagenes/lupa.png" alt="lupa de busqueda">               
+                            <input id="input-buscar" type="text" placeholder="¿Qué buscas?">
+                           <!--  <i id="buscar" class="fa-solid fa-magnifying-glass"></i>   -->           
                         </div>
                 </div>
             </div>
@@ -61,48 +62,63 @@
             </div>
 
             <div class="bloque-productos">
-
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/star-wars/mate clon.png" alt="mate">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
+                
+                <ul>
+                    <li class="articulo">
+                        <div class="bloque-productos_items">
+                            <img src="./assets/imagenes/star-wars/mate clon.png" alt="mate">
+                            <h3>Mate</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
+                                
+                    <li class="articulo">
+                        <div class="bloque-productos_items">
+                            <img src="./assets/imagenes/star-wars/baby yoda.png" alt="baby-yoda">
+                            <h3>Baby Yoda</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
                    
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/star-wars/baby yoda.png" alt="baby-yoda">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
+                    <li class="articulo">
+                        <div class="bloque-productos_items">
+                            <img src="./assets/imagenes/star-wars/cabeza dart vader.png" alt="cabeza">
+                            <h3>Cabeza Dart Vader</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
+                    
+                    <li class="articulo">
+                        <div class="bloque-productos_items">
+                            <img src="./assets/imagenes/star-wars/clon.png" alt="clon">
+                            <h3>Clon</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
+    
+                    <li class="articulo">
+                        <div class="bloque-productos_items last">
+                            <img src="./assets/imagenes/star-wars/Yoda viejo.png" alt="yoda">
+                            <h3>Yoda</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>    
+                    </li>
+                    
+                    <li class="articulo">
+                        <div class="bloque-productos_items last">
+                            <img src="./assets/imagenes/star-wars/dart vader.png" alt="dart-vader">
+                            <h3>Dart Vader</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
+                </ul>
 
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/star-wars/cabeza dart vader.png" alt="cabeza">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/star-wars/clon.png" alt="clon">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-
-                <div class="bloque-productos_items last">
-                    <img src="./assets/imagenes/star-wars/Yoda viejo.png" alt="yoda">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-
-                <div class="bloque-productos_items last">
-                    <img src="./assets/imagenes/star-wars/dart vader.png" alt="dart-vader">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
             </div>
 
         </section>
@@ -121,53 +137,67 @@
             </div>
 
             <div class="bloque-productos">
+                <ul>
+                    <li class="articulo"> 
+                        <div class="bloque-productos_items">
+                            <img src="./assets/imagenes/consolas/game boy.png" alt="game-boy">
+                            <h3>Game Boy</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver Producto</a>
+                        </div>
+                    </li>
 
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/consolas/game boy.png" alt="game-boy">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-                   
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/consolas/mando xbox.png" alt="mandoxbox">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
+                    <li class="articulo">
+                        <div class="bloque-productos_items">
+                            <img src="./assets/imagenes/consolas/mando xbox.png" alt="mandoxbox">
+                            <h3>Mando xbox</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
 
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/consolas/nintendo switch.png" alt="switch">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
+                    <li class="articulo">
+                        <div class="bloque-productos_items">
+                            <img src="./assets/imagenes/consolas/nintendo switch.png" alt="switch">
+                            <h3>Nintendo Switch</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
 
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/consolas/nintendo64.png" alt="nintendo64">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
+                    <li class="articulo">
+                        <div class="bloque-productos_items">
+                            <img src="./assets/imagenes/consolas/nintendo64.png" alt="nintendo64">
+                            <h3>Nintendo 64</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
 
-                <div class="bloque-productos_items last">
-                    <img src="./assets/imagenes/consolas/ps5.png" alt="ps5">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
+                    <li class="articulo">
+                        <div class="bloque-productos_items last">
+                            <img src="./assets/imagenes/consolas/ps5.png" alt="ps5">
+                            <h3>PS5</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
 
-                <div class="bloque-productos_items last">
-                    <img src="./assets/imagenes/consolas/xbox Xseries.png" alt="Xseries">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
+                    <li class="articulo">
+                        <div class="bloque-productos_items last">
+                            <img src="./assets/imagenes/consolas/xbox Xseries.png" alt="Xseries">
+                            <h3>Xbox Xseries</h3>
+                            <p>U$S 15</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </li>
+                </ul>
+                
             </div>
         </section>
 
         <section class="seccion-diversos">
-           
+          
             <div class="bloque-titulo">
                 <div class="bloque-titulo_h2">
                     <h2>Diversos</h2>
@@ -180,48 +210,61 @@
             </div>
 
             <div class="bloque-productos">
-
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/diversos/despertador-radio.png" alt="despertador-radio">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-                   
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/diversos/disfraz pikachu.png" alt="disfraz">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/diversos/figura sonic.png" alt="figura">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-
-                <div class="bloque-productos_items">
-                    <img src="./assets/imagenes/diversos/lentes Vr.png" alt="Vr">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-
-                <div class="bloque-productos_items last">
-                    <img src="./assets/imagenes/diversos/remera atari.png" alt="remera">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
-
-                <div class="bloque-productos_items last">
-                    <img src="./assets/imagenes/diversos/remera snes.png" alt="remera">
-                    <h3>Producto XYZ</h3>
-                    <p>U$S 15</p>
-                    <a href="#">Ver producto</a>
-                </div>
+                <ul>
+                    <li class="articulo">
+                         <div class="bloque-productos_items">
+                             <img src="./assets/imagenes/diversos/despertador-radio.png" alt="despertador-radio">
+                             <h3>Radio Despertador</h3>
+                             <p>U$S 15</p>
+                             <a href="#">Ver producto</a>
+                         </div>
+                    </li>
+     
+                    <li class="articulo">
+                         <div class="bloque-productos_items">
+                             <img src="./assets/imagenes/diversos/disfraz pikachu.png" alt="disfraz">
+                             <h3>Disfraz Pikachu</h3>
+                             <p>U$S 15</p>
+                             <a href="#">Ver producto</a>
+                         </div>
+                    </li>
+     
+                    <li class="articulo">
+                         <div class="bloque-productos_items">
+                             <img src="./assets/imagenes/diversos/figura sonic.png" alt="figura">
+                             <h3>Figura Sonic</h3>
+                             <p>U$S 15</p>
+                             <a href="#">Ver producto</a>
+                         </div>
+                    </li>
+     
+                    <li class="articulo">
+                         <div class="bloque-productos_items">
+                             <img src="./assets/imagenes/diversos/lentes Vr.png" alt="Vr">
+                             <h3>Lentes VR</h3>
+                             <p>U$S 15</p>
+                             <a href="#">Ver producto</a>
+                         </div>
+                    </li>
+     
+                    <li class="articulo">
+                         <div class="bloque-productos_items last">
+                             <img src="./assets/imagenes/diversos/remera atari.png" alt="remera">
+                             <h3>Remera Atari</h3>
+                             <p>U$S 15</p>
+                             <a href="#">Ver producto</a>
+                         </div>
+                    </li>
+     
+                    <li class="articulo">
+                         <div class="bloque-productos_items last">
+                             <img src="./assets/imagenes/diversos/remera snes.png" alt="remera">
+                             <h3>Remera NES</h3>
+                             <p>U$S 15</p>
+                             <a href="#">Ver producto</a>
+                         </div>
+                    </li>
+                </ul>
             </div>
 
         </section>
@@ -280,6 +323,7 @@
         <h2>Desarrollado por Adrian Barros<br>2022</h2>
     </footer>
     <script src="/js/index.js"></script>
+    <script src="./js/barra-busqueda/buscar.js"></script>
     <script src="./js/formularios/principal.js"></script>
 </body>
 </html>

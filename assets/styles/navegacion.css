@@ -10,17 +10,16 @@ header{
 }
 .navegacion-bloque{
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
 }
 .bloque-logo{
+    width: 30%;
     margin-top: 2rem;
     display: flex;
 }
-.bloque-logo img{
-    margin-left: 1.5rem;
-    height: 16.33px;
-    width: 22.74px;
+.bloque-nav i{
+    margin-top: 2rem;
 }
 .bloque-logo h2{
     color: #464646;
@@ -32,14 +31,15 @@ header{
 }
 /*boton*/
 .bloque-button{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 .bloque-button button{
     color: #2A7AE4;
-    margin-right: 1.5rem;
-    padding: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border: 1px solid #2A7AE4;
     font-weight: 600;
     background: #ffffff;
@@ -54,7 +54,10 @@ header{
 }
 /*barra de busqueda*/
 .navbar{
+    justify-content: space-between;
+    width: 60%;
     display: flex;
+    flex-direction: row-reverse;
 }
 .bloque-nav img{
     margin-top: 2rem;
@@ -67,20 +70,25 @@ header{
     font-size: 1rem;
     margin-top: 1.2rem;
     border-radius: 1rem;
-    width: 272px;
+    width: 120px;
     height: 40px;
-    display: none;
+    
 }
 @media screen and (min-width:480px) {
     .navbar .bloque-nav{
         margin-right: 5rem;
+    }
+    .bloque-nav input{
+        width: 200px;
     }
 }
 @media screen and (min-width:768px){
     .bloque-logo{
         width: 20%;
     }
-    .bloque-logo img{
+    i{
+        position: absolute;
+        margin-left: 15rem;
         width:40.02px;
         height:29.17px;
     }
@@ -92,10 +100,17 @@ header{
         flex-direction: row-reverse;
     }
     .navbar .bloque-nav input{
-        display: block;  
+        display: block;
+        width: 271px;  
+    }
+    .bloque-button button{
+        width: 118px;
+        height: 40px;
     }
     .bloque-button{
+        margin-top: 1rem;
         width: 20%;
+        margin-right: 3rem;
     }
     .bloque-nav{
         margin-right: 7rem;
@@ -113,7 +128,8 @@ header{
     .bloque-logo{
         margin-top: 3rem;
     }
-    .bloque-logo img{
+    i{
+        margin-top: 2.3rem;
         width:40.02px;
         height:29.17px;
     }

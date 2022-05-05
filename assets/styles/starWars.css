@@ -1,12 +1,13 @@
 .seccion-starWars{
     width: 100%;
-    height: 600px;
+    height: 630px;
 }
 .bloque-titulo{
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 80px;
+    margin-bottom: -1rem;
 }
 .bloque-titulo_h2{
     width: 40%;
@@ -40,19 +41,24 @@
     width: 100%;
     height: 400px;
     display: flex;
+    
+}
+.bloque-productos ul{
+    display: flex;
     flex-wrap: wrap;
 }
+
+li .bloque-productos_items{
+   margin-top: 1rem;
+   width: 40%;
+   height: 280px;
+}
 .bloque-productos_items{
-    width: 45%;
+    width: 35%;
     padding-left: 1rem;
     flex-wrap: wrap;
     height: 256px;
 }
-/*ultimos 2 bloques*/
-.last{
-    display: none;
-}
-
 .bloque-productos_items div{
     padding-left: 1rem;
 }
@@ -81,6 +87,10 @@
     color: #2A7AE4;
     text-decoration: none;
     padding-top: .5rem;
+}
+/*ultimos 2 bloques*/
+.last{
+    display: none;
 }
 @media screen and (min-width:480px) {
     .bloque-titulo_h3{
