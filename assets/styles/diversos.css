@@ -1,10 +1,4 @@
-.seccion-diversos{
+#seccion-diversos{
     width: 100%;
-    height: 700px;
-    margin-top: 2rem;
-}
-@media screen and (min-width:768px) {
-    .seccion-diversos{
-        height: 350px;
-    }
+    margin-bottom: 2rem;
 }
